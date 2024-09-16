@@ -1,0 +1,56 @@
+[
+  {
+    "picture": "/assets/images/coffee1.jpg",
+    "name": "Espresso",
+    "pricing": 2.99,
+    "rating": 4.5,
+    "votes": 120,
+    "popular": true,
+    "available": true
+  },
+  {
+    "picture": "/assets/images/coffee2.png",
+    "name": "Latte",
+    "pricing": 3.99,
+    "rating": 4.7,
+    "votes": 200,
+    "popular": true,
+    "available": true
+  },
+  {
+    "picture": "/assets/images/coffee3.png",
+    "name": "Cappuccino",
+    "pricing": 3.49,
+    "rating": 0,
+    "votes": 0,
+    "popular": false,
+    "available": false
+  },
+  {
+    "picture": "/assets/images/coffee4.png",
+    "name": "Americano",
+    "pricing": 2.49,
+    "rating": 4.3,
+    "votes": 80,
+    "popular": false,
+    "available": true
+  },
+  {
+    "picture": "/assets/images/coffee5.jpg",
+    "name": "Mocha",
+    "pricing": 4.29,
+    "rating": 4.8,
+    "votes": 150,
+    "popular": true,
+    "available": true
+  },
+  {
+    "picture": "/assets/images/coffee6.jpg",
+    "name": "Macchiato",
+    "pricing": 3.79,
+    "rating": 4.4,
+    "votes": 90,
+    "popular": false,
+    "available": true
+  }
+]
