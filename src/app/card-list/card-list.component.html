@@ -1,15 +1,30 @@
-<div class="card-list">
-  <div id="intro">
-    <h2 class="fontheading">Our Collection</h2>
-    <p class="fontbody grey">
-      Introducing our Coffee Collection, a selection of unique coffees from
-      different roast types and origins, expertly roasted in small batches and
-      shipped fresh weekly.
-    </p>
-    <button>All Products</button>
-    <button>Available Now</button>
+<div class="card-list_container">
+  <div id="intro" class="transparent">
+    <img class="background_vector" src="assets/images/vector.svg" />
+    <div class="intro_text transparent">
+      <h2 class="fontheading transparent">Our Collection</h2>
+      <p class="fontbody grey transparent">
+        Introducing our Coffee Collection, a selection of unique coffees from
+        different roast types and origins, expertly roasted in small batches and
+        shipped fresh weekly.
+      </p>
+    </div>
+    <div class="choice_button">
+      <button id="All_Products_button">All Products</button>
+      <button id="Available_Now_button">Available Now</button>
+    </div>
   </div>
-  <div class="card" *ngFor="let card of mycards">
-    <app-card [card]="card"></app-card>
+  <div class="card-list">
+    <ng-container *ngFor="let card of mycards">
+      @if (card.available) {
+      <div class="card">
+        <app-card [card]="card"></app-card>
+      </div>
+      } @else {
+      <div class="card soldout">
+        <app-card [card]="card"></app-card>
+      </div>
+      }
+    </ng-container>
   </div>
 </div>

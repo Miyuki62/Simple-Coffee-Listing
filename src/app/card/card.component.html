@@ -1,7 +1,25 @@
-<h2>{{ card.name }}</h2>
-<p>{{ card.pricing }}</p>
-<p>{{ card.rating }}</p>
-<p>{{ card.votes }}</p>
-<p>{{ card.popular }}</p>
-<p>{{ card.available }}</p>
-<img [src]="card.picture" [alt]="card.name" />
+<div class="card_container_img">
+  @if (card.popular) {
+  <p class="card_popular fontsmalltext bold">Popular</p>
+  }@else { }
+  <img class="card_img" [src]="card.image" [alt]="card.name" />
+</div>
+<div class="card_container_name">
+  <p class="card_name fontbody">{{ card.name }}</p>
+  <p class="card_price fontprice bold">{{ card.price }}</p>
+</div>
+<div class="card_container_rating_available">
+  <div class="card_container_rating_vote">
+    @if (card.rating > 0) {
+    <img src="assets/images/Star_fill.svg" alt="full star for ratings" />
+    <p class="card_rating">{{ card.rating }}</p>
+    <p class="card_votes grey bold">({{ card.votes }} votes)</p>
+    }@else {
+    <img src="assets/images/Star.svg" alt="empty star for ratings" />
+    <p class="card_votes grey bold">No ratings</p>
+    }
+  </div>
+  @if (card.available) { }@else {
+  <p class="card_available red fontlabel">Sold out</p>
+  }
+</div>

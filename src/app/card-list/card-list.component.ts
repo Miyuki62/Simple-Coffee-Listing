@@ -15,17 +15,16 @@ export class CardListComponent implements OnInit {
   mycards: Card[] = [];
 
   ngOnInit(): void {
-    console.log(coffeeData);
     this.mycards = coffeeData.map(
       (data: any) =>
         new Card(
-          data.picture,
+          data.image,
           data.name,
+          data.price,
           data.rating,
-          data.pricing,
           data.votes,
-          data.available,
-          data.popular
+          data.popular,
+          data.available
         )
     );
   }

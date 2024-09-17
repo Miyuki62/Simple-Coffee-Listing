@@ -13,15 +13,5 @@ import { Card } from './models/card';
 })
 export class AppComponent implements OnInit {
   mycard!: Card;
-  ngOnInit(): void {
-    this.mycard = new Card(
-      'assets/images/coffee6.jpg',
-      'test',
-      5,
-      4,
-      125,
-      true,
-      true
-    );
-  }
+  ngOnInit(): void {}
 }

@@ -1,24 +1,24 @@
 export class Card {
-  picture: string;
+  image: string;
   name: string;
-  pricing: number;
+  price: string;
   rating: number;
   votes: number;
   popular: boolean;
   available: boolean;
 
   constructor(
-    picture: string,
+    image: string,
     name: string,
-    pricing: number,
+    price: string,
     rating: number,
     votes: number,
     popular: boolean,
     available: boolean
   ) {
-    this.picture = picture;
+    this.image = image;
     this.name = name;
-    this.pricing = pricing;
+    this.price = price;
     this.rating = rating;
     this.votes = votes;
     this.popular = popular;
