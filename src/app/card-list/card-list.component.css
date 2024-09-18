@@ -63,6 +63,10 @@
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #6f757c;
   font-weight: bold;
+  cursor: pointer;
+}
+
+#All_Products_button {
+  background-color: #6f757c;
 }
